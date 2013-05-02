@@ -18,8 +18,6 @@ module Guard
         UI.info(message, :reset => true)
 
         options = @options.merge(options)
-
-        puts gotest_command(paths, options)
         success = system(gotest_command(paths, options))
 
         if @options[:notification] && !success
