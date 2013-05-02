@@ -1,0 +1,4 @@
+# Add go source files
+guard 'gotest' do
+  watch(%r{\.go$})
+end
