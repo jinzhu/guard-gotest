@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jon@doveston.me.uk"]
   spec.description   = %q{Guard gem for Go test}
   spec.summary       = %q{Automatically runs go test in the directories of changed files.}
-  spec.homepage      = 'http://rubygems.org/gems/guard-gotest'
+  spec.homepage      = 'https://github.com/hatoishi/guard-gotest'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
