@@ -20,8 +20,12 @@ module Guard
         options = @options.merge(options)
         success = system(gotest_command(paths, options))
 
-        if @options[:notification] && !success
-          Notifier.notify('Failed', :title => 'Gotest results', :image => :failed, :priority => 2)
+        if @options[:notification]
+         if success
+           Notifier.notify('Success', :title => 'Gotest results', :image => :success, :priority => 2)
+         else
+           Notifier.notify('Failed', :title => 'Gotest results', :image => :failed, :priority => 2)
+         end
         end
 
         success
