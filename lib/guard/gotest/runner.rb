@@ -60,7 +60,7 @@ module Guard
       end
 
       def gotest_executable
-        'go test -i; go test'
+        'go test'
       end
 
       def environment_variables
